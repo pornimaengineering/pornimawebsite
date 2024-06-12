@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 90px; /* Height of the contact strip + navbar */
+}
+
+.contact-strip {
+    font-size: 0.9rem;
+    z-index: 1030; /* Ensure the strip is above other content */
+}
+
+.navbar-custom {
+    top: 20px; /* Height of the contact strip */
+    z-index: 1020; /* Ensure the navbar is above other content */
+}
+
+#home .carousel-item {
+    height: 80vh;
+}
+
+#home .carousel-item img {
+    height: 80%;
+    object-fit: cover;
+}
+
+#home .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding
