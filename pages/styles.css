@@ -36,17 +36,40 @@ body {
     .nav-link:hover {
       color: #ffc107; /* Hover color for nav links */
     }
+}
+
+#about .carousel-item {
+    height: 35vh;
+}
+
+#about .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+#about .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding
+
+    .nav-link {
+      color: #fff; /* White text for nav links */
+    }
+    .nav-link:hover {
+      color: #ffc107; /* Hover color for nav links */
+    }
+}
 
 .card-deck .card {
       transition: transform 0.2s;
     }
-    .card-deck .card:hover {
-      transform: scale(1.05);
-    }
-    .card-img-top {
-      height: 200px;
-      object-fit: cover;
-    }
-    .card-body {
-      text-align: center;
-    }
+.card-deck .card:hover {
+  transform: scale(1.05);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  text-align: center;
+}
+	
