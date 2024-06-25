@@ -2,18 +2,42 @@ body {
     font-family: Arial, sans-serif;
     padding-top: 90px; /* Height of the contact strip + navbar */
 }
-
+/*
 .contact-strip {
+	background-color: #1F3861;
+	color: white;
+	padding: 10px;
+	text-align: left;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1030;
+	transition: top 0.3s;
 	height: 5vh;
-	background-color:#1F3861;
-	top: 0px;
-    font-size: 0.9rem;
-    z-index: 1030; /* Ensure the strip is above other content */
-	padding: 10px 0;
+}*/
+.contact-strip {
+	background-color: #1F3861;
+	color: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1030; /* Make sure it appears above the navbar */
+	transition: top 0.3s;
+	height: 5vh;
+	text-align: left;
+	padding: 6px;
 }
-
+.navbar.fixed-top {
+	top: 30px; /* Adjust based on your contact strip height */
+	transition: top 0.3s;
+}
+@media (max-width: 767px) {
+	.navbar.fixed-top {
+		top: 0; /* Move navbar to top when contact strip is hidden on small screens */
+	}
+}
 .navbar-custom {
-    top: 34px; /* Height of the contact strip */
+    top: 30px; /* Height of the contact strip */
     z-index: 1020; /* Ensure the navbar is above other content */
 }
 
@@ -23,11 +47,11 @@ body {
 
 #home .carousel-item img {
     height: 80%;
-    object-fit: cover;
+    object-fit: ;
 }
 
 #home .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.0);
     padding
 
     .nav-link {
@@ -39,7 +63,7 @@ body {
 }
 
 #about .carousel-item {
-    height: 35vh;
+    height: 36vh;
 }
 
 #about .carousel-item img {
@@ -48,15 +72,10 @@ body {
 }
 
 #about .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding
-
-    .nav-link {
-      color: #fff; /* White text for nav links */
-    }
-    .nav-link:hover {
-      color: #ffc107; /* Hover color for nav links */
-    }
+  background-color: #E2E8F5;
+  width:15%;
+  height:7vh;
+  padding: 9px;
 }
 
 .card-deck .card {
@@ -72,4 +91,41 @@ body {
 .card-body {
   text-align: center;
 }
-	
+.bg-light-green {
+	background-color: #d4edda; /* Light green background */
+}
+.bg-dark-green {
+	background-color: #036E03; /* Light green background */
+}
+.border-orange {
+	border: 2px solid #FFA500; /* Orange border color */
+}
+.p-size{
+	width:50%;
+}
+
+.icon1 i {
+    background: #4d6bb3;
+    color: #fff;
+    border: 1px solid #4d6bb3;
+}
+.icon3 i {
+    background: #ed2a24;
+    color: #fff;
+    border: 1px solid #ed2a24;
+}
+.icon5 i {
+    background: #7f2acd;
+    color: #fff;
+    border: 1px solid #7f2acd;
+}
+.icon4 i {
+    background: #40c1df;
+    color: #fff;
+    border: 1px solid #40c1df;
+}
+.icon6 i {
+    background: #e71807;
+    color: #fff;
+    border: 1px solid #e71807;
+}

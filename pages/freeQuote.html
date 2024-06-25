@@ -9,19 +9,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="contact-strip bg-dark text-white py-1 fixed-top">
-        <div class="container d-flex justify-content-between">
-            <div class="contact-info">
-                <span class="fa fa-phone"> +91 9975123246 | +91 7887782003 | +91 9226102662</span>
-                <span class="ml-3"><a href="mailto:pornimaengineering@gmail.com" class="fa fa-envelope"> pornimaengineering@gmail.com</a></span>
-            </div>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/pornimaengineering" class="fa fa-facebook"></a> &nbsp;&nbsp;
-                <a href="https://www.youtube.com/@PornimaEngineering" class="fa fa-youtube"></a> &nbsp;&nbsp;
-                <a href="https://www.instagram.com/pournimaengineering_official/" class="fa fa-instagram"></a> &nbsp;&nbsp;
-				<a href="https://www.linkedin.com/in/pornima-engineering-industries" class="fa fa-linkedin"></a>
-            </div>
-        </div>
+	<div class="contact-strip text-white p-1 text-left">
+		<div class="container">
+			<span class="fa fa-envelope">
+				<a href="mailto:pornimaengineering@gmail.com" class="text-white">pornimaengineering@gmail.com</a> 
+			</span> | 
+			<span class="fa fa-phone">
+				<a href="tel:+1234567890" class="text-white"> +91 9975123246</a>
+				
+			</span>
+		</div>
     </div>
     <!-- Navbar 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">-->
@@ -29,8 +26,9 @@
         <a class="navbar-brand" href="#"> 
             <table border=0> 
 				<tr> <td style="text-align: center; vertical-align: middle;">
-						<img src="images/LogoNoName.jpg" width="46" height="50" class="d-inline-block align-top" alt="" loading="lazy"/>
-						<img src="images/TextName.jpg" width="200" height="50" class="d-inline-block align-top" alt="" loading="lazy"/>
+						<a class="nav-link" href="index.html"><img src="images/LogoNoName.jpg" width="55" height="60" class="d-inline-block align-top" alt="" loading="lazy"/>
+						<img src="images/TextName.jpg" width="200" height="60" class="d-inline-block align-top" alt="" loading="lazy"/>
+						</a>
 					</td>
 				</tr>
 			</table>
@@ -41,29 +39,43 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html"><b>HOME</b></a>
+                    <a class="nav-link" href="index.html"><b>Home</b></a>
                 </li>&nbsp;&nbsp;
 				<li class="nav-item">
-                    <a class="nav-link" href="aboutus.html"><b>ABOUT US</b></a>
+                    <a class="nav-link" href="aboutus.html"><b>About Us</b></a>
                 </li>&nbsp;&nbsp;
+				<li class="nav-item">
+                    <a class="nav-link" href="services.html"><b>Services</b></a>
+                </li>&nbsp;&nbsp;
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="services.html"><b>Solutions</b></a>
+                </li>&nbsp;&nbsp;
+				<li class="nav-item">
+                    <a class="nav-link" href="services.html"><b>Projects</b></a>
+                </li>&nbsp;&nbsp;
+				<li class="nav-item">
+                    <a class="nav-link" href="services.html"><b>FAQ</b></a>
+                </li>&nbsp;&nbsp;-->
                 <li class="nav-item">
-                    <a class="nav-link" href="services.html"><b>SERVICES</b></a>
-                </li>&nbsp;&nbsp;
-                <li class="nav-item">
-                    <a class="nav-link" href="contactUs.html"><b>CONTACT US</b></a>
+                    <a class="nav-link" href="contactUs.html"><b>Contact Us</b></a>
                 </li>&nbsp;&nbsp;
 				<li class="nav-item">
-                    <a class="nav-link" href="solarcalCulator.html"><b>SOLAR CALCULATOR</b></a>
+                    <a class="nav-link" href="solarcalCulator.html"><b>Solar Calculator</b></a>
                 </li>&nbsp;&nbsp;
 				<li class="nav-item">
-                    <a class="nav-link bg-success text-white" href="freeQuote.html"><b>GET FREE QUOTE</b></a>
+                    <a class="nav-link bg-success text-white" href="freeQuote.html"><b>Get Fee Quote</b></a>
                 </li>&nbsp;&nbsp;&nbsp;&nbsp;
+				<li class="nav-item">
+                    <a class="nav-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </li>
             </ul>
         </div>
+		 
     </nav>
 
     <!-- Home Section -->
-    <section id="about" class="bg-primary text-white text-center py-2">
+    <section id="about" class="bg-primary text-white text-center py-0">
         <div id="aboutCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -80,51 +92,135 @@
     <!-- About Section -->
 	<div class="container my-5">
 		<div class="container">
-			<form id="solar-form" action="#" method="post">
-				<div class="form-group col-md-15">
-					<label for="location">Name:</label>
-					<input type="text" class="form-control" id="location" name="location" required>
+			<form action="#" method="POST" id="form">
+				<input type="hidden" name="access_key" value="42ed5229-5cb5-4c72-9962-3c090bfe6440" />
+				<input type="hidden" name="subject" value="New Free Quotation Request" />
+				<input type="checkbox" name="botcheck" id="" style="display: none;" />
+				<div class="form-group">
+					<div class="form-row">
+						<div class="col">
+							<input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+						</div>
+						<div class="col">
+							<input type="email" class="form-control" id="email" name="email" placeholder="Email Id" required>
+						</div>
+					</div>
+					<div class="form-row">&nbsp;</div>
+					<div class="form-row">
+						<div class="col">
+							<input type="tel" class="form-control" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Mobile Number" required>
+						</div>
+						<div class="col">
+							<input type="number" class="form-control" id="AnnualConsumption" name="AnnualConsumption" placeholder="Annual Energy Consumption (kWh/Units)" required>
+						</div>
+					</div>
+					<div class="form-row">&nbsp;</div>
+					<div class="form-row">
+						<div class="col">
+							<select id="type" class="form-control" name="project" required>
+								<option value="select">Project Type:</option>
+								<option value="ongrid">Ongrid Solar Plant</option>
+								<option value="offgrid">Offgrid Solar Plant</option>
+								<option value="hybrid">Hybrid Solar Plant</option>
+								<option value="waterpump">Solar Water Pump</option>
+								<option value="flourmill">Solar Flour Mill</option>
+							</select>
+						</div>
+						<div class="col">
+							<input type="number" class="form-control" id="pinCode" name="pinCode" pattern="[0-6]{6}" placeholder="Pin Code" required>
+						</div>
+					</div>
 				</div>
-				<div class="form-group col-md-15">
-					<label for="roof-area">Email:</label>
-					<input type="email" class="form-control" id="roof-area" name="roof-area" required>
-				</div>
-				<div class="form-group col-md-15">
-					<label for="roof-area">Mobile:</label>
-					<input type="number" class="form-control" id="roof-area" name="roof-area" required>
-				</div>
-				<div class="form-group col-md-15">
-					<label for="energy-consumption">Annual Energy Consumption (kWh/Units):</label>
-					<input type="number" class="form-control" id="energy-consumption" name="energy-consumption" required>
-				</div>
-				<div class="form-group col-md-15">
-					<label for="energy-consumption">Project Type:</label>
-					<select id="type" class="form-control" name="project" required>
-						<option value="select">Select Project</option>
-						<option value="ongrid">Ongrid Solar Plant</option>
-						<option value="offgrid">Offgrid Solar Plant</option>
-						<option value="hybrid">Hybrid Solar Plant</option>
-						<option value="waterpump">Solar Water Pump</option>
-						<option value="flourmill">Solar Flour Mill</option>
-					</select>
-				</div>
-				<div class="form-group col-md-15">
-				<label for="energy-consumption">Address</label>
-					<textarea class="form-control" id="address" name="address" rows="2" required></textarea>
+				<div class="form-group">
+					<textarea class="form-control" id="address" name="address" rows="2" placeholder="Complete Address"  required></textarea>
 				</div>
 				<div class="form-group col-md-15">
 					<button type="submit" class="btn btn-primary">Send Query</button>
 				</div>
+				<p class="text-base text-center text-gray-400" id="result"></p>
 			</form>
 		</div>
 	</div>
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-5">
-        <div class="container">
-            <p>&copy; 2024 Pornima Engineering Industries. All rights reserved.</p>
+    <footer class="bg-dark text-white">
+		<div class="card-body bg-dark">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card-body bg-dark text-left">
+							<h5 class="text-left text-white">Locations</h5>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<p class="text-left">Services States:</p>
+							<p class="text-left">Maharashtra</p>
+							<p class="text-left">Office Locations:</p>
+							<p class="text-left">Akola | Pune | Nagpur | Amravati</p>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<a class="nav-link bg-success text-white" href="freeQuote.html"><b>Get Fee Quote</b></a>
+						</div>
+						
+					</div>
+					<div class="col-md-4">
+						<div class="card-body bg-dark text-left">
+							<h5 class="text-left text-white">Get in touch</h5>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<p class="card-text text-left fa fa-envelope">
+								<a href="mailto:pornimaengineering@gmail.com" class="text-white">pornimaengineering@gmail.com</a> 
+							</p>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<p class="card-text text-left fa fa-phone">
+								<a href="tel:+1234567890" class="text-white"> +91 7887782003</a>
+							</p>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<p class="card-text text-left fa fa-phone">
+								<a href="tel:+1234567890" class="text-white"> +91 9226102662</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card-body bg-dark text-left">
+							<h5 class="text-left text-white">Information</h5>
+						</div>
+						<div class="card-body bg-dark text-left text-white">
+							<p class="text-left">Ongrid Solar System</p>
+							<p class="text-left">Offgrid Solar System</p>
+							<p class="text-left">Hybrid Solar System</p>
+							<p class="text-left">Solar Water Pump</p>
+							<p class="text-left">Solar Water Pump</p>
+							<p class="text-left">Solar for Homes</p>
+							<p class="text-left">Solar for Agriculture</p>
+							<p class="text-left">Solar for Businesses</p>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<a class="nav-link bg-success text-white" href="solarcalCulator.html"><b>Solar Calculator</b></a>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="card-body bg-dark text-left">
+							<h5 class="text-left text-white">Quick Links</h5>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<a class="nav-link" href="index.html"><b>Home</b></a>
+							<a class="nav-link" href="aboutus.html"><b>About Us</b></a>
+							<a class="nav-link" href="services.html"><b>Services</b></a>
+							<a class="nav-link" href="contactUs.html"><b>Contact Us</b></a>
+							<a class="nav-link" href="services.html"><b>Solutions</b></a>
+							<a class="nav-link" href="services.html"><b>Projects</b></a>
+							<a class="nav-link" href="services.html"><b>FAQ</b></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="container text-center">
+            <p class="card-text text-left border-orange"> </p>
         </div>
-		<div class="container">
-            <p>Powered By : SAVITech Solutions</p>
+        <div class="container text-center py-4">
+            <p>&copy; 2024 Pornima Engineering Industries. All rights reserved. | Powered By : SAVITech Solutions</p>
         </div>
     </footer>
 
@@ -132,5 +228,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="script.js"></script>
+	<script>
+        $(document).ready(function() {
+            var previousScroll = 0;
+            $(window).scroll(function() {
+                var currentScroll = $(this).scrollTop();
+                if (currentScroll > previousScroll) {
+                    // Scrolling down
+                    $('.contact-strip').css('top', '-50px'); // Hide contact strip
+                    $('.navbar').css('top', '0'); // Adjust navbar position
+                } else {
+                    // Scrolling up
+                    $('.contact-strip').css('top', '0'); // Show contact strip
+                    $('.navbar').css('top', '30px'); // Adjust navbar position
+                }
+                previousScroll = currentScroll;
+            });
+        });
+    </script>
 </body>
 </html>

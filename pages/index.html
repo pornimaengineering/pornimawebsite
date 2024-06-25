@@ -7,21 +7,27 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+	<style>
+		.nav-link-after {
+            height: 5px;
+            transition: width .3s;
+			background-color: lightgreen;
+            color: white !important;
+			background: orange;
+        }
+	</style>
 </head>
 <body>
-	<div class="contact-strip bg-dark text-white py-1 fixed-top">
-        <div class="container d-flex justify-content-between">
-            <div class="contact-info">
-                <span class="fa fa-phone"> +91 9975123246 | +91 7887782003 | +91 9226102662</span>
-                <span class="ml-3"><a href="mailto:pornimaengineering@gmail.com" class="fa fa-envelope"> pornimaengineering@gmail.com</a></span>
-            </div>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/pornimaengineering" class="fa fa-facebook"></a> &nbsp;&nbsp;
-                <a href="https://www.youtube.com/@PornimaEngineering" class="fa fa-youtube"></a> &nbsp;&nbsp;
-                <a href="https://www.instagram.com/pournimaengineering_official/" class="fa fa-instagram"></a> &nbsp;&nbsp;
-				<a href="https://www.linkedin.com/in/pornima-engineering-industries" class="fa fa-linkedin"></a>
-            </div>
-        </div>
+	<div class="contact-strip text-white p-1 text-left">
+		<div class="container">
+			<span class="fa fa-envelope">
+				<a href="mailto:pornimaengineering@gmail.com" class="text-white">pornimaengineering@gmail.com</a> 
+			</span> | 
+			<span class="fa fa-phone">
+				<a href="tel:+1234567890" class="text-white"> +91 9975123246</a>
+				
+			</span>
+		</div>
     </div>
     <!-- Navbar 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">-->
@@ -29,8 +35,9 @@
         <a class="navbar-brand" href="#"> 
             <table border=0> 
 				<tr> <td style="text-align: center; vertical-align: middle;">
-						<img src="images/LogoNoName.jpg" width="46" height="50" class="d-inline-block align-top" alt="" loading="lazy"/>
-						<img src="images/TextName.jpg" width="200" height="50" class="d-inline-block align-top" alt="" loading="lazy"/>
+						<a class="nav-link" href="index.html"><img src="images/LogoNoName.jpg" width="55" height="60" class="d-inline-block align-top" alt="" loading="lazy"/>
+						<img src="images/TextName.jpg" width="200" height="60" class="d-inline-block align-top" alt="" loading="lazy"/>
+						</a>
 					</td>
 				</tr>
 			</table>
@@ -40,24 +47,37 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html"><b>HOME</b></a>
-                </li>&nbsp;&nbsp;
-				<li class="nav-item">
-                    <a class="nav-link" href="aboutus.html"><b>ABOUT US</b></a>
-                </li>&nbsp;&nbsp;
                 <li class="nav-item">
-                    <a class="nav-link" href="services.html"><b>SERVICES</b></a>
+                    <a class="nav-link" href="index.html"><b>Home</b></a>
                 </li>&nbsp;&nbsp;
+				<li class="nav-item">
+                    <a class="nav-link" href="aboutus.html"><b>About Us</b></a>
+                </li>&nbsp;&nbsp;
+				<li class="nav-item">
+                    <a class="nav-link" href="services.html"><b>Services</b></a>
+                </li>&nbsp;&nbsp;
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="services.html"><b>Solutions</b></a>
+                </li>&nbsp;&nbsp;
+				<li class="nav-item">
+                    <a class="nav-link" href="services.html"><b>Projects</b></a>
+                </li>&nbsp;&nbsp;
+				<li class="nav-item">
+                    <a class="nav-link" href="services.html"><b>FAQ</b></a>
+                </li>&nbsp;&nbsp;-->
                 <li class="nav-item">
-                    <a class="nav-link" href="contactUs.html"><b>CONTACT US</b></a>
+                    <a class="nav-link" href="contactUs.html"><b>Contact Us</b></a>
                 </li>&nbsp;&nbsp;
 				<li class="nav-item">
-                    <a class="nav-link" href="solarcalCulator.html"><b>SOLAR CALCULATOR</b></a>
+                    <a class="nav-link" href="solarcalCulator.html"><b>Solar Calculator</b></a>
                 </li>&nbsp;&nbsp;
 				<li class="nav-item">
-                    <a class="nav-link bg-success text-white" href="freeQuote.html"><b>GET FREE QUOTE</b></a>
+                    <a class="nav-link bg-success text-white" href="freeQuote.html"><b>Get Fee Quote</b></a>
                 </li>&nbsp;&nbsp;&nbsp;&nbsp;
+				<li class="nav-item">
+                    <a class="nav-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </li>
             </ul>
         </div>
 		 
@@ -114,90 +134,258 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-5">
+    <section id="services" class="bg-light-green py-5">
         <div class="container">
             <h2 class="text-center">Our Services</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4">
+			<div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-6">
                         <div class="card-body">
-                            <h5 class="card-title">Residential Solar</h5>
-                            <p class="card-text">We provide top-notch solar solutions for homes.</p>
+							<img src="images/epc.jpg" class="card-img-top" alt="Card Image 1">
+							<span class="">&nbsp;</span>
+                            <h5 class="card-title">Solar EPC (Engineering, Procurement & Construction)</h5>
+                            <p class="card-text">Feasibility Studies and Site Assessment</p>
+							<p class="card-text">System Design and Engineering</p>
+							<p class="card-text">Permitting and Compliance</p>
+							<p class="card-text">Component Sourcing</p>
+							<p class="card-text">Project Management</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
+                <div class="col-md-6">
+                    <div class="card mb-6">
                         <div class="card-body">
-                            <h5 class="card-title">Commercial Solar</h5>
-                            <p class="card-text">Efficient and reliable solar installations for businesses.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Agricultural Solar</h5>
-                            <p class="card-text">Keep your solar systems running at peak efficiency.</p>
-                        </div>
-                    </div>
-                </div>
-				<div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Solar Maintenance</h5>
-                            <p class="card-text">Keep your solar systems running at peak efficiency.</p>
+						    <img src="images/Electrical-Services.jpg" class="card-img-top" alt="Card Image 1">
+							<span class="">&nbsp;</span>
+                            <h5 class="card-title">Electrical Services</h5>
+                            <p class="card-text">Electrical Design and Engineering</p>
+                            <p class="card-text">Custom Electrical Designs</p>
+							<p class="card-text">Installation, Upgrades, Maintenance and Repair</p>
+							<p class="card-text">Smart Home and Building Automation</p>
+							<p class="card-text">Renewable Energy Integration</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+		</div>	
     </section>
-
+	
     <!-- About Section -->
-    <section id="about" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center">About Us</h2>
-            <p class="text-center">We are dedicated to providing clean and affordable solar energy solutions. Our team of experts ensures the highest quality installations and maintenance services.</p>
-        </div>
+    <section id="contact" class="py-5">
+		<div class="card">
+			<div class="card-body bg-dark-green">
+				<div class="container">
+					<h2 class="text-center text-white">About us</h2>
+						<p class="text-center text-white">Welcome to Pornima Engineering Industries, your trusted partner in solar energy solutions. As a leading Solar Engineering, Procurement, and Construction (EPC) company, we are dedicated to transforming the way the world uses energy. With a commitment to innovation, quality, and sustainability, we deliver comprehensive solar energy systems tailored to meet the unique needs of our clients.</p>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="card mb-6">
+								<div class="card-body">
+									<h4 class="text-left">Govt. approved Empaneled Vendor</h4>
+									<p class="card-text text-left">
+										We are Empaneled with MNRE and MAHADSICOM under PM Surya Ghar Muft Bijli Yojana.
+									</p>
+									<p class="card-text text-left">
+									<img src="images/Suryaghar.jpg" class="card-img-top" alt="Card Image 1">
+									</p>
+									<h4 class="text-left">What We Do</h4>
+									<p class="card-text text-left">
+										We offer a full range of services that cover every aspect of solar energy projects:
+										<h5 class="text-left"><b>Engineering</b></h5>
+										<p class="card-text text-left"> Our team of skilled engineers designs customized solar energy systems that maximize efficiency and performance. Using the latest technology and industry best practices, we ensure our designs meet the highest standards of quality and reliability. </p>
+										<h5 class="text-left"><b>Procurement</b></h5>
+										<p class="card-text text-left">We source the best solar components from leading manufacturers worldwide. Our strong relationships with suppliers guarantee that we procure high-quality materials at competitive prices, ensuring the best value for our clients.</p>
+										<h5 class="text-left"><b>Construction</b></h5>
+										<p class="card-text text-left">Our experienced construction teams handle the installation of solar systems with precision and care. From residential rooftops to large-scale commercial projects, we manage every aspect of construction to ensure timely and seamless project completion.</p>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card mb-6">
+								<div class="card-body">
+									<img src="images/epc.jpg" class="card-img-top" alt="Card Image 1">
+								</div>
+								<div class="card-body">
+									<img src="images/epc1.jpg" class="card-img-top" alt="Card Image 1">
+								</div>
+								<div class="card-body">
+									<img src="images/aboutus1.webp" class="card-img-top" alt="Card Image 1">
+								</div>
+								<div class="card-body">
+									<img src="images/mission.webp" class="card-img-top" alt="Card Image 1">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center">Contact Us</h2>
-            <form action="submit_form.php" method="post">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
-
+    <section id="contact" class="py-3">
+		<div class="card">
+			<div class="card-body bg-light-green">
+				<div class="container ">
+					<h4 class="text-center">Contact Us</h4>
+						<form action="#" method="POST" id="form">
+						 <input type="hidden" name="access_key" value="42ed5229-5cb5-4c72-9962-3c090bfe6440" />
+						 <input type="hidden" name="subject" value="New contact from website" />
+						 <input type="checkbox" name="botcheck" id="" style="display: none;" />
+							<div class="form-group col-md-15">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+							</div>
+								<div class="form-row">
+									<div class="col">
+										<div class="form-group col-md-15">
+											<input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+										</div>
+									</div>
+									<div class="col">
+										<div class="form-group col-md-15">
+											<input type="tel" class="form-control" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Your Mobile number" required>
+										</div>
+									</div>
+								</div>
+							<div class="form-group col-md-15">
+								<textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary">Send Message</button>
+						</form>
+						<p class="text-base text-center text-gray-400" id="result"></p>
+				</div>
+			</div>
+		</div>
+	</section>
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-5">
-        <div class="container">
-            <p>&copy; 2024 Pornima Engineering Industries. All rights reserved.</p>
+    <footer class="bg-dark text-white">
+		<div class="card-body bg-dark">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card-body bg-dark text-left">
+							<h5 class="text-left text-white">Locations</h5>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<p class="text-left">Services States:</p>
+							<p class="text-left">Maharashtra</p>
+							<p class="text-left">Office Locations:</p>
+							<p class="text-left">Akola | Pune | Nagpur | Amravati</p>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<a class="nav-link bg-success text-white" href="freeQuote.html"><b>Get Fee Quote</b></a>
+						</div>
+						
+					</div>
+					<div class="col-md-4">
+						<div class="card-body bg-dark text-left">
+							<h5 class="text-left text-white">Get in touch</h5>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<p class="card-text text-left fa fa-envelope">
+								<a href="mailto:pornimaengineering@gmail.com" class="text-white">pornimaengineering@gmail.com</a> 
+							</p>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<p class="card-text text-left fa fa-phone">
+								<a href="tel:+1234567890" class="text-white"> +91 7887782003</a>
+							</p>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<p class="card-text text-left fa fa-phone">
+								<a href="tel:+1234567890" class="text-white"> +91 9226102662</a>
+							</p>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<h5 class="text-left text-white">Follow Us On</h5>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<div class="social-icons">
+								<a target="_blank" href="https://www.facebook.com/pornimaengineering" class="fa fa-facebook" style="font-size: 2em;"></a> &nbsp;&nbsp;
+								<a target="_blank" href="https://www.youtube.com/@PornimaEngineering" class="fa fa-youtube" style="font-size: 2em;"></a> &nbsp;&nbsp;
+								<a target="_blank" href="https://www.instagram.com/pournimaengineering_official/" class="fa fa-instagram" style="font-size: 2em;"></a> &nbsp;&nbsp;
+								<a target="_blank" href="https://www.linkedin.com/in/pornima-engineering-industries" class="fa fa-linkedin" style="font-size: 2em;"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card-body bg-dark text-left">
+							<h5 class="text-left text-white">Information</h5>
+						</div>
+						<div class="card-body bg-dark text-left text-white">
+							<p class="text-left">Ongrid Solar System</p>
+							<p class="text-left">Offgrid Solar System</p>
+							<p class="text-left">Hybrid Solar System</p>
+							<p class="text-left">Solar Water Pump</p>
+							<p class="text-left">Solar Water Pump</p>
+							<p class="text-left">Solar for Homes</p>
+							<p class="text-left">Solar for Agriculture</p>
+							<p class="text-left">Solar for Businesses</p>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<a class="nav-link bg-success text-white" href="solarcalCulator.html"><b>Solar Calculator</b></a>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="card-body bg-dark text-left">
+							<h5 class="text-left text-white">Quick Links</h5>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<a class="nav-link" href="index.html"><b>Home</b></a>
+							<a class="nav-link" href="aboutus.html"><b>About Us</b></a>
+							<a class="nav-link" href="services.html"><b>Services</b></a>
+							<a class="nav-link" href="contactUs.html"><b>Contact Us</b></a>
+							<a class="nav-link" href="services.html"><b>Solutions</b></a>
+							<a class="nav-link" href="services.html"><b>Projects</b></a>
+							<a class="nav-link" href="services.html"><b>FAQ</b></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="container text-center">
+            <p class="card-text text-left border-orange"> </p>
         </div>
-		<div class="container">
-            <p>Powered By : SAVITech Solutions</p>
+        <div class="container text-center py-4">
+            <p>&copy; 2024 Pornima Engineering Industries. All rights reserved. | Powered By : SAVITech Solutions</p>
         </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+	<script>
+        $(document).ready(function() {
+            var previousScroll = 0;
+            $(window).scroll(function() {
+                var currentScroll = $(this).scrollTop();
+                if (currentScroll > previousScroll) {
+                    // Scrolling down
+                    $('.contact-strip').css('top', '-50px'); // Hide contact strip
+                    $('.navbar').css('top', '0'); // Adjust navbar position
+                } else {
+                    // Scrolling up
+                    $('.contact-strip').css('top', '0'); // Show contact strip
+                    $('.navbar').css('top', '30px'); // Adjust navbar position
+                }
+                previousScroll = currentScroll;
+            });
+        });
+		
+		document.addEventListener('DOMContentLoaded', function() {
+			var links = document.querySelectorAll('.nav-link');
+
+			links.forEach(function(link) {
+
+				link.addEventListener('click', function() {
+					links.forEach(function(link) {
+						link.classList.remove('active');
+					});
+					link.classList.add('active');
+				});
+			});
+		});
+    </script>
 </body>
 </html>
