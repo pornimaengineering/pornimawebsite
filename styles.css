@@ -129,3 +129,55 @@ body {
     color: #fff;
     border: 1px solid #e71807;
 }
+
+.bg-custom1 {
+	background: #101095;
+}
+.bg-custom2 {
+	background: #3131A0;
+}
+.bg-custom3 {
+	background: #F7931E;
+}
+.bg-custom4 {
+	background: #FBA33C;
+}
+.bg-custom5 {
+	background: #F3B46B;
+}
+.bg-custom6 {
+	background: #0F8E2B;
+}
+.bg-custom7 {
+	background: #2AA946;
+}
+.bg-custom8 {
+	background: #53B969;
+}
+.bg-custom9 {
+	background: #D9FFD0;
+}
+.bg-custom10 {
+	background: #FEFFD0;
+}
+.circle {
+	width: 150px;
+	height: 60px;
+	background: #fff;
+	border-radius: 10px 10px 1px 1px; /* Makes the element circular */
+	text-align:center;
+	color: #101095;
+}
+.plain {
+	color: #101095;
+}
+.containerbg1 {
+	background: #D4EDDA; /*#F1F1F1*/
+}
+.containerbg2 {
+	background: #C3CED1;
+}
+/* background-color: #ffff; color:#FFA500; height:50px; text-align:center;*/
+.bg-light-grey {
+	background-color: #f0f0f0; /* Light grey color */
+}

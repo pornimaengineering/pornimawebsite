@@ -75,75 +75,75 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="about" class="bg-primary text-white text-center py-0">
+	<section id="about" class="bg-primary text-white text-center py-0">
         <div id="aboutCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/quote.webp" class="d-block w-100" alt="Solar Panels">
+                    <img src="images/contactUs.webp" class="d-block w-100" alt="Solar Panels">
                 </div>
             </div>
         </div>
     </section>
-	<div class="container">&nbsp;</div>
-    <div class="container">
-		<h4 class="text-center">Free Quotation </h4>
-		<p class="card-text"></p>
-    </div>
-    <!-- About Section -->
-	<div class="container my-5">
-		<div class="container">
-			<form action="#" method="POST" id="form">
-				<input type="hidden" name="access_key" value="42ed5229-5cb5-4c72-9962-3c090bfe6440" />
-				<input type="hidden" name="subject" value="New Free Quotation Request" />
-				<input type="checkbox" name="botcheck" id="" style="display: none;" />
-				<div class="form-group">
-					<div class="form-row">
-						<div class="col">
-							<input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
-						</div>
-						<div class="col">
-							<input type="email" class="form-control" id="email" name="email" placeholder="Email Id" required>
-						</div>
-					</div>
-					<div class="form-row">&nbsp;</div>
-					<div class="form-row">
-						<div class="col">
-							<input type="tel" class="form-control" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Mobile Number" required>
-						</div>
-						<div class="col">
-							<input type="number" class="form-control" id="AnnualConsumption" name="AnnualConsumption" placeholder="Annual Energy Consumption (kWh/Units)" required>
-						</div>
-					</div>
-					<div class="form-row">&nbsp;</div>
-					<div class="form-row">
-						<div class="col">
-							<select id="type" class="form-control" name="project" required>
-								<option value="select">Project Type:</option>
-								<option value="ongrid">Ongrid Solar Plant</option>
-								<option value="offgrid">Offgrid Solar Plant</option>
-								<option value="hybrid">Hybrid Solar Plant</option>
-								<option value="waterpump">Solar Water Pump</option>
-								<option value="flourmill">Solar Flour Mill</option>
-							</select>
-						</div>
-						<div class="col">
-							<input type="number" class="form-control" id="pinCode" name="pinCode" pattern="[0-6]{6}" placeholder="Pin Code" required>
-						</div>
-					</div>
-				</div>
-				<div class="form-group">
-					<textarea class="form-control" id="address" name="address" rows="2" placeholder="Complete Address"  required></textarea>
-				</div>
-				<div class="form-group col-md-15">
-					<button type="submit" class="btn btn-primary">Send Query</button>
-				</div>
-				<p class="text-base text-center text-gray-400" id="result"></p>
-			</form>
+	<section id="services" class="bg-light-green py-3">
+		<div class="container text-center">
+			<h4>Free Quotation</h4>
+			<p class="card-text text-left border-orange"> </p>
 		</div>
-	</div>
+		<div class="container py-4">
+			<div class="container">
+				<form action="#" method="POST" id="form">
+					<input type="hidden" name="access_key" value="42ed5229-5cb5-4c72-9962-3c090bfe6440" />
+					<input type="hidden" name="subject" value="New Free Quotation Request" />
+					<input type="checkbox" name="botcheck" id="" style="display: none;" />
+					<div class="form-group">
+						<div class="form-row">
+							<div class="col">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+							</div>
+							<div class="col">
+								<input type="email" class="form-control" id="email" name="email" placeholder="Email Id" required>
+							</div>
+						</div>
+						<div class="form-row">&nbsp;</div>
+						<div class="form-row">
+							<div class="col">
+								<input type="tel" class="form-control" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Mobile Number" required>
+							</div>
+							<div class="col">
+								<input type="number" class="form-control" id="AnnualConsumption" name="AnnualConsumption" placeholder="Annual Energy Consumption (kWh/Units)" required>
+							</div>
+						</div>
+						<div class="form-row">&nbsp;</div>
+						<div class="form-row">
+							<div class="col">
+								<select id="type" class="form-control" name="project" required>
+									<option value="select">Project Type:</option>
+									<option value="ongrid">Ongrid Solar Plant</option>
+									<option value="offgrid">Offgrid Solar Plant</option>
+									<option value="hybrid">Hybrid Solar Plant</option>
+									<option value="waterpump">Solar Water Pump</option>
+									<option value="flourmill">Solar Flour Mill</option>
+								</select>
+							</div>
+							<div class="col">
+								<input type="number" class="form-control" id="pinCode" name="pinCode" pattern="[0-6]{6}" placeholder="Pin Code" required>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" id="address" name="address" rows="2" placeholder="Complete Address"  required></textarea>
+					</div>
+					<div class="form-group col-md-15">
+						<button type="submit" class="btn btn-primary">Send Query</button>
+					</div>
+					<p class="text-base text-center text-gray-400" id="result"></p>
+				</form>
+			</div>
+		</div>
+	</section>
     <!-- Footer -->
     <footer class="bg-dark text-white">
-		<div class="card-body bg-dark">
+				<div class="card-body bg-dark">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
@@ -179,6 +179,17 @@
 							<p class="card-text text-left fa fa-phone">
 								<a href="tel:+1234567890" class="text-white"> +91 9226102662</a>
 							</p>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<h5 class="text-left text-white">Follow Us On</h5>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<div class="social-icons">
+								<a target="_blank" href="https://www.facebook.com/pornimaengineering" class="fa fa-facebook" style="font-size: 2em;"></a> &nbsp;&nbsp;
+								<a target="_blank" href="https://www.youtube.com/@PornimaEngineering" class="fa fa-youtube" style="font-size: 2em;"></a> &nbsp;&nbsp;
+								<a target="_blank" href="https://www.instagram.com/pournimaengineering_official/" class="fa fa-instagram" style="font-size: 2em;"></a> &nbsp;&nbsp;
+								<a target="_blank" href="https://www.linkedin.com/in/pornima-engineering-industries" class="fa fa-linkedin" style="font-size: 2em;"></a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-3">

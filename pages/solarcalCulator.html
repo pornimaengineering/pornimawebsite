@@ -75,47 +75,163 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="about" class="bg-primary text-white text-center py-0">
+	<section id="about" class="bg-primary text-white text-center py-0">
         <div id="aboutCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/calculator.jpg" class="d-block w-100" alt="Solar Panels">
+                    <img src="images/contactUs.webp" class="d-block w-100" alt="Solar Panels">
                 </div>
             </div>
         </div>
     </section>
-	<div class="container">&nbsp;</div>
-    <div class="container">
-		<h4 class="text-center">Solar Calculator</h4>
-		<p class="card-text"></p>
-    </div>
-    <!-- About Section -->
-	<div class="container my-5">
-			<div class="container">
-					<form id="solar-form" action="#" method="post">
-						<div class="form-group col-md-15">
-							<label for="location">Location:</label>
-							<input type="text" class="form-control" id="location" name="location" required>
-						</div>
-						<div class="form-group col-md-15">
-							<label for="roof-area">Roof Area (sq. ft):</label>
-							<input type="number" class="form-control" id="roof-area" name="roof-area" required>
-						</div>
-						<div class="form-group col-md-15">
-							<label for="energy-consumption">Annual Energy Consumption (kWh):</label>
-							<input type="number" class="form-control" id="energy-consumption" name="energy-consumption" required>
-						</div>
-						<div class="form-group col-md-15">
-							<label for="electricity-rate">Electricity Rate (Rs/kWh):</label>
-							<input type="number" class="form-control" id="electricity-rate" name="electricity-rate" required>
-						</div>
-						<button type="submit" class="btn btn-primary">Calculate</button>
-					</form>
+	<section id="calculator" class="bg-light-green py-3">
+		<div class="container text-center">
+			<h4>Solar Calculator</h4>
+			<p class="card-text text-left border-orange"> </p>
+		</div>
+		<div class="container py-4">
+			<div class="container containerbg1">
+				<form action="#" method="POST" id="form">
+					<div class="form-group col-md-15">
+						<label for="location">Location:</label>
+						<input type="text" class="form-control" id="location" name="location" required>
+					</div>
+					<div class="form-group col-md-15">
+						<label for="roof-area">Roof Area (sqft):</label>
+						<input type="number" class="form-control" id="roof-area" name="roof-area" required>
+					</div>
+					<div class="form-group col-md-15">
+						<label for="energy-consumption">Annual Energy Consumption (kWh):</label>
+						<input type="number" class="form-control" id="energy-consumption" name="energy-consumption" required>
+					</div>
+					<div class="form-group col-md-15">
+						<label for="electricitybill">Monthly Electricity Bill (Rs.):</label>
+						<input type="number" class="form-control" id="electricity-bill" name="electricity-bill" required>
+					</div>
+					<button type="submit" onclick="solarCalculator();" class="btn btn-primary">Calculate</button>
+					<div class="">
+						<i>Calculation is indicative in nature. Actual numbers may vary. </i>
+					</div>
+				</form>
 			</div>
-	</div>
+		</div>
+	</section>
+	<section id="services" class="bg-light-grey py-4">
+		<div class="container my-4">
+			<div class="container containerbg2">
+				<div class="row containerbg">
+					<div class="col-md-3 ">
+						<div class="card bg-custom1 text-white">
+							<div class="card-body">
+								<h5 class="card-title">Size of Power Plant</h5>
+								<div class="circle bg-light p-3 mx-auto">
+									<p id="size"></p>
+								</div>
+								<p class="text-left">&nbsp;</p>
+								<h5 class="card-title">Rooftop Area</h5>
+								<div class="circle bg-light p-3 mx-auto">
+									<p id="rooftoparea"></p>
+								</div>
+								<p class="text-left">&nbsp;</p>
+							</div>
+						</div>
+						<div class="card bg-custom2 text-white">
+							<div class="card-body">
+								<h5 class="card-title">Electricity Generation</h5>
+								<div class="circle bg-light p-3 mx-auto">
+									<p id="genperday"></p>
+								</div>
+								<p class="text-left">&nbsp;</p>
+								<div class="circle bg-light p-2 mx-auto">
+									<p id="genperyear"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card bg-custom3 text-white">
+							<div class="card-body">
+								<h5 class="card-title">Estimated Project Cost</h5>
+								<div class="circle bg-light p-2 mx-auto">
+									<p id="totalcost"></p>
+								</div>
+							</div>
+						</div>
+						<div class="card bg-custom4 text-white">
+							<div class="card-body">
+								<h5 class="card-title">Subsidy</h5>
+								<div class="circle bg-light p-2 mx-auto">
+									<p id="subsidy"></p>
+								</div>
+								<p class="text-left">&nbsp;</p>
+							</div>
+						</div>
+						<div class="card bg-custom5 text-white">
+							<div class="card-body">
+								<h5 class="card-title">Estimated Consumer Share</h5>
+								<div class="circle bg-light p-2 mx-auto">
+									<p id="consumershare"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card bg-custom6 text-white">
+							<div class="card-body">
+								<h5 class="card-title">Financial Savings</h5>
+								<div class="circle bg-light p-2 mx-auto">
+									<p id="savingperday"></p>
+								</div>
+							</div>
+						</div>
+						<div class="card bg-custom7 text-white">
+							<div class="card-body">
+								<p class="text-center">Or</p>
+								<div class="circle bg-light p-2 mx-auto">
+									<p id="savingpermonth"></p>
+								</div>
+								<p class="text-left">&nbsp;</p>
+							</div>
+						</div>
+						<div class="card bg-custom8 text-white">
+							<div class="card-body">
+								<h5 class="card-title">Or</h5>
+								<div class="circle bg-light p-2 mx-auto">
+									<p id="savingperyear"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card bg-custom9 text-white">
+							<div class="card-body plain">
+								<h5 class="card-title">Payback Period </h5>
+								<p class="text-center">(Expected lifetime 25 years)</p>
+								<div class="circle bg-light p-1 mx-auto">
+									<p id="paybacktime"></p>
+								</div>
+							</div>
+						</div>
+						<div class="card bg-custom10 text-white">
+							<div class="card-body plain">
+								<h5 class="card-title">Emission Savings (in 25 years)</h5>
+								<div class="circle bg-light p-3 mx-auto">
+									<p id="emmsaving"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<p>
+				Maximum capacity for availing subsidy is 10kW capped at Rs. 78,000/-. (As per MNRE under PM Suryaghar Muft Bijli Yojna)</i>
+				<i>Please visit <a target="_blank" href="https://www.pmsuryaghar.gov.in/">https://www.pmsuryaghar.gov.in/</a> for more details</i>
+		</p>
+			</div>
+		</div>
+	</section>
     <!-- Footer -->
-<footer class="bg-dark text-white">
-		<div class="card-body bg-dark">
+	<footer class="bg-dark text-white">
+				<div class="card-body bg-dark">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
@@ -151,6 +267,17 @@
 							<p class="card-text text-left fa fa-phone">
 								<a href="tel:+1234567890" class="text-white"> +91 9226102662</a>
 							</p>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<h5 class="text-left text-white">Follow Us On</h5>
+						</div>
+						<div class="card-body bg-dark text-left">
+							<div class="social-icons">
+								<a target="_blank" href="https://www.facebook.com/pornimaengineering" class="fa fa-facebook" style="font-size: 2em;"></a> &nbsp;&nbsp;
+								<a target="_blank" href="https://www.youtube.com/@PornimaEngineering" class="fa fa-youtube" style="font-size: 2em;"></a> &nbsp;&nbsp;
+								<a target="_blank" href="https://www.instagram.com/pournimaengineering_official/" class="fa fa-instagram" style="font-size: 2em;"></a> &nbsp;&nbsp;
+								<a target="_blank" href="https://www.linkedin.com/in/pornima-engineering-industries" class="fa fa-linkedin" style="font-size: 2em;"></a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-3">
@@ -201,6 +328,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="script.js"></script>
 	<script>
+		
         $(document).ready(function() {
             var previousScroll = 0;
             $(window).scroll(function() {
@@ -217,6 +345,8 @@
                 previousScroll = currentScroll;
             });
         });
+		
+		
     </script>
 </body>
 </html>
