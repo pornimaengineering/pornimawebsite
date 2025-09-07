@@ -48,7 +48,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html"><b>Home</b></a>
+                    <a class="nav-link" href="index"><b>Home</b></a>
                 </li>&nbsp;&nbsp;
 				<li class="nav-item">
                     <a class="nav-link" href="aboutus.html"><b>About Us</b></a>
